@@ -3,101 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tagging Etiquette in Microsoft Teams</title>
+    <title>Tagging Etiquette in Teams</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
+            font-family: 'Inter', sans-serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            background: #f7f9fc;
+            color: #2c3e50;
+            line-height: 1.7;
         }
+
         header {
-            background-color: #2c3e50;
+            background-color: #2980b9;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 60px 20px 40px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
         main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            padding: 40px;
         }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
+
+        section {
+            margin-bottom: 40px;
         }
+
         h2 {
-            font-size: 1.5em;
-            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            font-size: 1.6em;
             color: #2980b9;
+            margin-bottom: 20px;
         }
+
+        h2::before {
+            content: "🔹";
+            margin-right: 10px;
+        }
+
         ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 0;
         }
+
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 30px;
         }
-        footer {
-            text-align: center;
-            font-size: 0.9em;
-            color: #7f8c8d;
-            margin-top: 40px;
+
+        li::before {
+            content: "✔️";
+            position: absolute;
+            left: 0;
+            top: 0;
         }
-        .important {
-            color: #e74c3c;
-            font-weight: bold;
-        }
+
         .note {
             font-style: italic;
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+
+        .warning {
+            color: #c0392b;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
             color: #95a5a6;
+        }
+
+        /* Graphics / visual accents */
+        .highlight-box {
+            background: #e8f0fe;
+            padding: 20px;
+            border-left: 5px solid #2980b9;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Mindful Tagging in Teams</h1>
+        <p style="font-weight:400; font-size:1.1em;">Use tagging intentionally, effectively, and wisely</p>
+    </header>
 
-<header>
-    <h1>Tagging Etiquette in Microsoft Teams</h1>
-</header>
+    <main>
+        <section>
+            <h2>Purpose of Tagging</h2>
+            <div class="highlight-box">
+                <ul>
+                    <li>Draw attention to messages that require action.</li>
+                    <li>Assign responsibility clearly within teams.</li>
+                    <li>Enhance visibility for important updates.</li>
+                    <li>Provide context so tagged people understand the reason.</li>
+                </ul>
+            </div>
+        </section>
 
-<main>
-    <h2>Purpose of Tagging</h2>
-    <p>Tagging is a tool to:</p>
-    <ul>
-        <li><strong>Direct attention</strong> to specific individuals or groups.</li>
-        <li><strong>Assign tasks</strong> or request actions.</li>
-        <li><strong>Clarify context</strong> within conversations.</li>
-        <li><strong>Enhance visibility</strong> of important messages.</li>
-    </ul>
+        <section>
+            <h2>Best Practices</h2>
+            <div class="highlight-box">
+                <ul>
+                    <li>Tag intentionally; avoid unnecessary mentions.</li>
+                    <li>Limit the number of people tagged in a single message.</li>
+                    <li>Always provide context for the tag.</li>
+                    <li>Prefer group tags over individual tags when relevant.</li>
+                    <li>Do not tag in private chats unless urgent.</li>
+                </ul>
+            </div>
+        </section>
 
-    <h2>Best Practices</h2>
-    <ul>
-        <li><strong>Be intentional:</strong> Tag only when necessary.</li>
-        <li><strong>Provide context:</strong> Explain why you're tagging someone.</li>
-        <li><strong>Limit tags:</strong> Avoid tagging multiple people in a single message.</li>
-        <li><strong>Respect privacy:</strong> Avoid tagging in private or 1:1 chats unless essential.</li>
-        <li><strong>Use group tags:</strong> Prefer team or role-based tags over individual ones.</li>
-    </ul>
+        <section>
+            <h2>Common Pitfalls</h2>
+            <div class="highlight-box">
+                <ul>
+                    <li>Over-tagging causing notification fatigue.</li>
+                    <li>Tagging without explanation or context.</li>
+                    <li>Interrupting workflow with unnecessary tags.</li>
+                </ul>
+            </div>
+            <p class="note">Tagging is for action, not visibility.</p>
+            <p class="warning">Use tags sparingly and purposefully to maintain impact.</p>
+        </section>
+    </main>
 
-    <h2>Common Pitfalls</h2>
-    <ul>
-        <li><strong>Over-tagging:</strong> Tagging too many people can lead to notification fatigue.</li>
-        <li><strong>Ambiguity:</strong> Tagging without context can cause confusion.</li>
-        <li><strong>Interruptions:</strong> Tagging inappropriately can disrupt others' workflows.</li>
-    </ul>
-
-    <p class="note">Remember, tagging is not for visibility—it's for action.</p>
-    <p class="important">Use tags sparingly and purposefully to maintain effective communication.</p>
-</main>
-
-<footer>
-    <p>Adapted from principles inspired by <a href="https://nohello.net/en" target="_blank">No Hello</a></p>
-</footer>
-
+    <footer>
+        Inspired by <a href="https://nohello.net/en" target="_blank">No Hello</a>
+    </footer>
 </body>
 </html>
